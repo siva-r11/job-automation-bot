@@ -1,0 +1,23 @@
+{
+  "name": "job-automation-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "auth:linkedin": "ts-node scripts/auth-linkedin.ts",
+    "auth:naukri": "ts-node scripts/auth-naukri.ts",
+    "apply:linkedin": "ts-node scripts/bot-linkedin.ts",
+    "apply:naukri": "ts-node scripts/apply-naukri.ts",
+    "update:naukri": "ts-node scripts/bot-naukri.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^20.19.43",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

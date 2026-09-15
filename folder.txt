@@ -1,0 +1,12 @@
+job-automation-bot/
+├── data/
+│   └── config.json           # Centralized answers and job criteria
+├── auth/
+│   └── (Session JSON files save here automatically)
+├── scripts/
+│   ├── auth-linkedin.ts      # Session generator for LinkedIn
+│   ├── auth-naukri.ts        # Session generator for Naukri
+│   ├── bot-linkedin.ts       # Core Easy Apply engine
+│   └── bot-naukri.ts         # Core Naukri update engine
+├── package.json              # Project dependencies and shortcuts
+└── tsconfig.json             # TypeScript rules

@@ -1,0 +1,27 @@
+{
+  "linkedinSearch": {
+    "jobRole": "Senior QA Automation Engineer",
+    "location": "Chennai"
+  },
+  "naukriSearch": {
+    "jobRole": "Senior QA Automation Engineer",
+    "location": "Chennai",
+    "maxPages": 3,
+    "maxApplications": 10
+  },
+  "answers": {
+    "generalExperience": "7",
+    "resumePath": "E:/Siva/Siva_R_Resume.docx",
+    "keywords": {
+      "automation": "5",
+      "playwright": "3",
+      "selenium": "5",
+      "robot framework": "3",
+      "java": "5",
+      "typescript": "3",
+      "api": "4",
+      "sponsorship": "No",
+      "notice": "90"
+    }
+  }
+}
