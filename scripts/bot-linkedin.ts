@@ -6,6 +6,9 @@ import * as path from 'path';
 const configPath = path.resolve(__dirname, '../data/config.json');
 const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
 const { linkedinSearch, answers } = config;
+const resumePath = path.isAbsolute(answers.resumePath)
+    ? answers.resumePath
+    : path.resolve(__dirname, '..', answers.resumePath);
 
 async function startEndToEndApply() {
     const browser = await chromium.launch({ headless: false }); 
@@ -130,7 +133,7 @@ async function handleApplicationModal(page: Page): Promise<boolean> {
             // C. Handle File Uploads (Resume)
             const fileInput = group.locator('input[type="file"]');
             if (await fileInput.isVisible() && answers.resumePath) {
-                await fileInput.setInputFiles(answers.resumePath).catch(() => console.log("File upload failed."));
+                await fileInput.setInputFiles(resumePath).catch(() => console.log("File upload failed."));
             }
         }
 
